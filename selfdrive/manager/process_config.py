@@ -28,7 +28,7 @@ procs = [
   PythonProcess("controlsd", "selfdrive.controls.controlsd"),
   PythonProcess("deleter", "selfdrive.loggerd.deleter", persistent=True),
   PythonProcess("dmonitoringd", "selfdrive.monitoring.dmonitoringd", enabled=not JETSON and (not PC or WEBCAM), driverview=True),
-  PythonProcess("logmessaged", "selfdrive.logmessaged", enabled=not JETSON, persistent=True),
+#  PythonProcess("logmessaged", "selfdrive.logmessaged", enabled=not JETSON, persistent=True),
   PythonProcess("pandad", "selfdrive.pandad", persistent=True),
   PythonProcess("paramsd", "selfdrive.locationd.paramsd"),
   PythonProcess("plannerd", "selfdrive.controls.plannerd"),
@@ -37,7 +37,7 @@ procs = [
   PythonProcess("timezoned", "selfdrive.timezoned", enabled=TICI, persistent=True),
   PythonProcess("tombstoned", "selfdrive.tombstoned", enabled=not PC and not JETSON, persistent=True),
   PythonProcess("updated", "selfdrive.updated", enabled=not PC and not JETSON, persistent=True),
-  PythonProcess("uploader", "selfdrive.loggerd.uploader", enabled=not JETSON, persistent=True),
+#  PythonProcess("uploader", "selfdrive.loggerd.uploader", enabled=not JETSON, persistent=True),
   PythonProcess("mapd", "selfdrive.mapd.mapd"),
 
   # EON only
